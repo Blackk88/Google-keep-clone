@@ -147,7 +147,7 @@ class App {
     const noteCoordinates = event.target.getBoundingClientRect()
     const horizontal = noteCoordinates.left + window.scrollX
     const vertical = noteCoordinates.top + window.scrollY
-    this.$colorTooltip.style.transform = `translate(${horizontal}px, ${vertical}px)`
+    this.$colorTooltip.style.transform = `translate(${horizontal - 100}px, ${vertical}px)`
     this.$colorTooltip.style.display = "flex"
   }
 
