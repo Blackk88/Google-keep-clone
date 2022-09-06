@@ -145,9 +145,9 @@ class App {
     if (!event.target.matches(".fa-palette")) return
     this.id = event.target.dataset.id
     const noteCoordinates = event.target.getBoundingClientRect()
-    const horizontal = noteCoordinates.left + window.scrollX
+    const horizontal = noteCoordinates.left + window.scrollX - 100
     const vertical = noteCoordinates.top + window.scrollY
-    this.$colorTooltip.style.transform = `translate(${horizontal - 100}px, ${vertical}px)`
+    this.$colorTooltip.style.transform = `translate(${horizontal}px, ${vertical}px)`
     this.$colorTooltip.style.display = "flex"
   }
 
