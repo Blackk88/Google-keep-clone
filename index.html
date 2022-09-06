@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89e255c4f2.js" crossorigin="anonymous"></script>
+    <Title>Google Keep Clone</Title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img
+        class="header-logo"
+        src="https://www.gstatic.com/images/branding/product/1x/keep_48dp.png" 
+        />
+        <h2 class="header-title">Keep</h2>
+      </header>
+      
+      <div id="form-container">
+        <form autocomplete="off" id="form">
+          <input type="text" class="form-text" id="form--note-title" placeholder="Title" />
+          <input type="text" class="form-text" id="form--note-text" placeholder="Take a note..." />
+
+          <div id="form-buttons">
+            <button type="submit" class="btn" id="add-note-button">Add note</button>
+            <button type="button" class="btn" id="form-close-button">Close</button>
+          </div>
+        </form>
+      </div>
+      <div class="notes">
+        <h6 class="notes-category notes-pinned">PINNED</h6>
+        <div id="notes-pinned"> </div>
+        
+        <h6 class="notes-category notes-others">OTHERS</h6>
+        <div id="notes-others"> </div>
+        
+        <div id="placeholder">
+          <p id="placeholder-text">Notes you add appear here</p>
+        </div>
+      </div>
+      
+      <div id="color-tooltip">
+        <div class="color-option" data-color="#fff" id="white"></div>
+        <div class="color-option" data-color="#d7aefb" id="purple"></div>
+        <div class="color-option" data-color="#fbbc04" id="orange"></div>
+        <div class="color-option" data-color="#a7ffeb" id="teal"></div>
+        <input type="color" name="" id="">
+      </div>
+
+      <div class="modal">
+        <div class="modal-content">
+          <input type="text" placeholder="Title..." class="modal-title">
+          <input type="text" placeholder="Text..." class="modal-text">
+          <span class="btn modal-close-button">Close</span>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
